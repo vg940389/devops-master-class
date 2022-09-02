@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 jobs:
-- job1:
+- job: job1
   steps:
   - script: echo Hello, world,changed!
     displayName: 'Run a one-line script'
@@ -21,8 +21,8 @@ jobs:
       echo This was added by venkat
     displayName: 'Run a multi-line script'
 
-- job2:
+- job: job2
   steps:
-  - script: echo ,"Hellomultile jobs"
+  - script: echo ,Hellomultile jobs
     displayName: 'Second Job'
 
