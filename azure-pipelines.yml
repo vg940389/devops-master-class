@@ -25,3 +25,11 @@ stages:
         deploy:
           steps:
           - script: echo deploy to dev
+  
+  - deployment: QaDeploy
+    environment: QA
+    strategy: 
+      runOnce:
+        deploy:
+          steps:
+          - script: echo deploy to QA
